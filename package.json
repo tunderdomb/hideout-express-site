@@ -1,0 +1,14 @@
+{
+  "name": "hideout-express-site",
+  "version": "0.3.0",
+  "description": "No description",
+  "main": "hideout.js",
+  "repository": {
+    "type": "git",
+    "url": "No repository"
+  },
+  "author": "tunderdomb <tunderdomb@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+  }
+}

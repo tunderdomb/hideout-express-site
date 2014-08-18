@@ -1,0 +1,30 @@
+<section class="banner">
+  {!<img class="banner-img" src="/static/img/banner-whole.png" alt="banner" width="2560" height="674"/>!}
+  <div class="banner-img">
+    <div class="bannertitle">
+      <h1>
+        Ingyen adjuk hozzá a <br/>
+        <b>pinkslim</b> fehérjét
+      </h1>
+    </div>
+    <div class="pinkbubble">
+      <div class="bubbletext">
+        <h1>
+          <strong>Pink Slim</strong><br/>
+          zsírégető <br/>
+          <span>csak csajoknak</span>
+        </h1>
+      </div>
+      <div class="arrow"></div>
+    </div>
+    <div class="banner-text">
+      <h1>
+        <div>
+          Szeretnél <br/>
+          <b>gyors, hatékony</b>
+        </div>
+        fogyókúrát?
+      </h1>
+    </div>
+  </div>
+</section>

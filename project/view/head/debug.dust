@@ -1,0 +1,5 @@
+{@if cond="'{settings.env}' == 'development'"}
+  <script type="text/javascript">
+    console.log({@contextDump/})
+  </script>
+{/if}

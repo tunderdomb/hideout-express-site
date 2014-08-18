@@ -1,0 +1,22 @@
+<div class="footerwrap">
+  <div class="wrap">
+    <div class="column1">
+      <div>2014 Minden jog fenntartva Fitness-termek.hu Magyarország kft.</div>
+      <div class="logo2"></div>
+    </div>
+    <div class="column2">
+      <ul class="footermenu">
+        <li><a href="https://fitness-termek.hu/FITNESS-TERMEK.hu%20Magyarorsz%C3%A1g%20Kft.%20-%20%C3%81SZF%20-%202012.08.20.-t%C3%B3l.pdf">Üzletszabályzat</a></li>
+        <li><a href="https://fitness-termek.hu/FITNESS-TERMEK.hu%20Magyarorsz%C3%A1g%20Kft.%20-%20Impresszum.pdf">Impresszum </a></li>
+        <li><a href="https://fitness-termek.hu/kapcsolat">Kapcsolat</a></li>
+      </ul>
+    </div>
+    <div class="facebooktext">
+      Ha tetszik megosztod? <br/>
+      KÖSZI!
+    </div>
+    <div class="facebook">
+      <img src="/static/img/facebook.png" alt=""/>
+    </div>
+  </div>
+</div>

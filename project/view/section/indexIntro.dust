@@ -1,0 +1,12 @@
+<a href="" id="startparam" name="startparam"></a>
+<section class="intro-section">
+  <div class="wrap">
+    <h1 class="section-title">Mi az a Pink Slim?</h1>
+    <p class="marginbottom">
+      Egy komplex zsírégető formula, mely már Európa 30 országában bizonyított. A Pink Slim kifejezetten hölgyek számára lett kifejlesztve, működési elve a zsír gyors energiává alakításán alapszik. Használatával gyorsabban és könnyebben beindul a fogyás folyamata, az elért eredményt pedig hosszú távon, egyszerűen fenn tudod tartani!
+    </p>
+    <div class="qdiv">Be Slim and Stay Slim!</div>
+    <div class="little-qdiv">Légy karcsú és maradj karcsú!</div>
+    <div class="center margintop"><button class="btn" id="btn1">Karcsú leszek!</button></div>
+  </div>
+</section>

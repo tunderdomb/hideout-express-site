@@ -1,0 +1,23 @@
+{>"layout/input"/}
+{<input}
+  {?title}
+    <span class="field-title">{title}</span>
+  {/title}
+  {?prefixTextLeft}
+    <div class="input-group-addon field-prefix field-prefix-left">{prefixTextLeft}</div>
+  {/prefixTextLeft}
+  {?prefixTextRight}
+    <div class="input-group-addon field-prefix field-prefix-right">{prefixTextLeft}</div>
+  {/prefixTextRight}
+  <input role="input{?role} {role}{/role}"
+         {?defaultError}data-default-error="{defaultError}" {/defaultError}
+         class="field"
+         type="{type}"
+         name="{name}"
+         value="{value}"
+         {?required}required="" {/required}
+         {?disabled}disabled="" {/disabled}
+         {?autocomplete}autocomplete="{autocomplete}" {/autocomplete}
+         {?placeholder}placeholder="{placeholder}"{/placeholder}/>
+  <span role="errorLabel" data-name="{name}" hidden class="error"></span>
+{/input}

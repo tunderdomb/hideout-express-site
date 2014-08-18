@@ -1,0 +1,17 @@
+{>"layout/input"/}
+<label class="label{?cls} {cls}{/cls}">
+  {<input}
+    <input role="input{?role} {role}{/role}"
+           class="checkbox"
+           hidden="hidden"
+           type="checkbox"
+           name="{name}"
+           {?checked}checked="checked" {/checked}
+           {?defaultError}data-default-error="{defaultError}" {/defaultError}
+           {?required}required="required"{/required}/>
+    {?title}
+      <span class="checkbox-title">{title}</span>
+    {/title}
+    <span role="errorLabel" data-name="{name}" hidden class="error"></span>
+  {/input}
+</label>

@@ -1,0 +1,6 @@
+# http://en.wikipedia.org/wiki/Robots_exclusion_standard
+
+# Disallow
+User-agent: *
+Disallow: /downloads
+Disallow: /uploads

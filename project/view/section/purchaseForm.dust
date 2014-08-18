@@ -1,0 +1,154 @@
+<section class="purchase-section form-section" id="buyparam">
+  <div class="wrap">
+    <div class="table">
+      <div class="top-cell"></div>
+      <div class="top-cell">
+        <div class="center">
+          <div class="top-cell">
+            <img src="/static/img/box-3.png" width="260" alt=""/>
+          </div>
+          <div class="top-cell full">
+            <h1 class="section-title">Kedvezményes termék vásárlás</h1>
+            <div class="center line"><s>9.990 Ft</s></div>
+            <div class="center line"><span>helyett</span></div>
+            <div class="center price line"><span>6.990 Ft</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="second">
+            {!form!}
+            <form role="purchaseform" data-general-error="A mező kitöltése kötelező">
+              {!name!}
+              <div class="row">
+                {>"general/field" cls="half-wide top-cell" type="text" name="lastName" value=lastName placeholder="Vezetéknév" required=1/}
+                {>"general/field" cls="half-wide top-cell" type="text" name="firstName" value=firstName placeholder="Keresztnév" required=1/}
+              </div>
+              {!email + phone!}
+              <div class="row">
+                {>"general/field" cls="half-wide top-cell" type="email" name="email" value=email placeholder="E-mail" required=1/}
+                {>"general/field" prefixTextLeft="+36" cls="half-wide top-cell addon" type="tel" name="phone" value=phone placeholder="Telefon" required=1/}
+              </div>
+              {!Shipping address!}
+              <div class="row">
+                {>"general/field" cls="wide top-cell" type="text" name="city" value=city placeholder="Város" required=1/}
+              </div>
+              {!zip + address!}
+              <div class="row">
+                {>"general/field" cls="one-wide top-cell" type="text" name="zip" placeholder="IRSZ" required=1/}
+                {>"general/field" cls="four-wide top-cell" type="text" name="address" placeholder="Utca, házszám, ajtó, emelet" required=1/}
+              </div>
+              {!coupon + quantity!}
+              <div class="row">
+                <div class="top-cell half-wide">
+                  {>"general/field" cls="wide block" type="text" name="couponID" placeholder="Kupon kód" required=1/}
+                  {^hasCouponCode}
+                    <a href="/" class="field-title cuponlink">Hogyan jutok kuponhoz?</a>
+                  {/hasCouponCode}
+                </div>
+                <div class="top-cell half-wide counter">
+                  <button type="button" role="decreaseQuantity" class="btn minus">-</button>
+                  {>"general/field" cls="counter" disabled=1 type="text" name="quantity" required=1/}
+                  <button type="button" role="increaseQuantity" class="btn plus">+</button>
+                </div>
+              </div>
+              {!payment + shipping method!}
+              <div class="row">
+                <label class="label top-cell half-wide">
+                  <div class="payment-label"></div>
+                  <select role="input" class="select field" role="menu" name="paymentMethod" required="required">
+                    <option selected value="PayPal">PayPal</option>
+                    <option value="PrePaid">Előre utalás</option>
+                    <option value="COD">Utánvét</option>
+                  </select>
+                  <span role="errorLabel" data-name="paymentMethod" hidden class="error"></span>
+                </label>
+                <label class="label top-cell half-wide payment-label">
+                  <div class="payment-label"></div>
+                  <select role="input" class="select field" name="shippingMethod" required="required">
+                    <option selected value="CourierService">Futárszolgálat</option>
+                    <option value="Pick">Személyes átvétel</option>
+                  </select>
+                  <span role="errorLabel" data-name="shippingMethod" hidden class="error"></span>
+                </label>
+              </div>
+              <div role="purchase:notification" class="row re-email">
+                <span >Ezzel az e-mail címmel már vásároltak</span>
+              </div>
+
+              {!order summary!}
+
+              <div class="summary-border">
+                {!discount summary!}
+                <div role="discount:summary" class="row discount-summary">
+                  {!discountQuantity!}
+                  {>"general/field" cls="top-cell"
+                  type="text"
+                  name="discountQuantity"
+                  disabled=1
+                  value=0/}
+                  db <em>kedvezményes</em> FA - Pink Slim zsírégető
+                </div>
+
+                {!normal summary!}
+                <div role="normal:summary" hidden="hidden"  class="row normal-summary">
+                  {!normalQuantity!}
+                  {>"general/field" cls="top-cell"
+                  type="text"
+                  name="normalQuantity"
+                  disabled=1
+                  value=0/}
+                  db FA - Pink Slim zsírégető
+                </div>
+
+                <div class="row summary">
+                  {!discountPrice!}
+                  {>"general/field" cls="wide top-cell discount-price"
+                  title="Kedvezményes ár:"
+                  type="text"
+                  name="discountPrice"
+                  disabled=1
+                  value=0/}
+
+                  {!shippingPrice!}
+                  {>"general/field" cls="wide top-cell transport-price"
+                  title="Szállítási költség:"
+                  type="text"
+                  disabled=1
+                  name="shippingPrice"
+                  value=0/}
+
+                  {!totalPrice!}
+                  <div class="totalprice-bubble">
+                    {>"general/field" cls="half-wide top-cell summary-price"
+                    title="Végösszeg:"
+                    type="text"
+                    disabled=1
+                    name="totalPrice"
+                    value=0/}
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <label class="label">
+                  <textarea role="input" name="remark" class="field"
+                            placeholder="Üzenet, megjegyzés. Pl. Felső csengő, Délután vagyok otthon"></textarea>
+                </label>
+              </div>
+              {!disclaimer + submit!}
+              <div class="row">
+                <div class="top-cell half-wide">
+                  {>"general/checkbox" name="isDisclaimerRead" checked=1
+                  title="Elfogadom a vásárlási feltételeket"
+                  defaultError="A feltételeket kötelező elfogadni a vásárláshoz"/}
+                </div>
+                <div class="top-cell half-wide">
+                  <button role="submit" class="wide btn">Megvásárlom</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

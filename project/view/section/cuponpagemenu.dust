@@ -1,0 +1,41 @@
+<section class="cuponpagemenu">
+  <div class="defaultmenu">
+    <div class="inline">
+      <div class="phonediv">
+        +36 20 123 4567
+      </div>
+      <div class="phonepopup">Ügyfélszolgálat</div>
+    </div>
+
+    <div class="inline">
+      <div class="pick">Személyes átvétel Budapesten</div>
+      <div class="pickpopup">
+        1077 Budapest Fantázia lakópark &nbsp;17. <br/>
+        1. emelet, H-P: 09:00-16:00, <br/>
+        SZ,V: 12:00-14:00
+      </div>
+    </div>
+    <div class="delivery inline">
+      Kiszállítás: 1 munkanap
+    </div>
+  </div>
+
+  <div class="mobilemenu">
+    <div class="mobilemenu1">Információk, átvételi pont <div class="menuopener"></div></div>
+    <div class="menu-item2">
+      <div>Ügyfélszolgálat</div>
+      <div class="phonediv">
+        +36 20 123 4567
+      </div>
+      <div class="pick">Személyes átvétel Budapesten</div>
+      <p>
+        1077 Budapest Fantázia lakópark &nbsp; 17. <br/>
+        1. emelet, H-P: 09:00-16:00, <br/>
+        SZ,V: 12:00-14:00
+      </p>
+      <div class="delivery inline">
+        Kiszállítás: 1 munkanap
+      </div>
+    </div>
+  </div>
+</section>

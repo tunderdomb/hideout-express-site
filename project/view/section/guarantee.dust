@@ -1,0 +1,63 @@
+<a href="" id="guaranteeparam" name="guaranteeparam"></a>
+<section class="guarantee">
+  <div class="wrap">
+    <div class="title">Garancia</div>
+
+    <div class="inline top">
+      <div class="guarantee1-title">
+        Vásárlói vélemények
+      </div>
+      <div class="opinion1">
+        <div class="img">
+
+        </div>
+        <div class="description">
+          Vizsgaidőszak előtt kezdtem el a Pinkslimet használni. Amellett, hogy elkezdtem fogyni tőle,
+          a tananyagra is jobban tudtam fókuszálni, így segített a vizsgákra való felkészülésben.
+        </div>
+        <div class="writer">
+          Nóri (24)
+        </div>
+      </div>
+      <div class="opinion2">
+        <div class="img3">
+
+        </div>
+        <div class="description">
+          Mivel szellemi munkát végzek, gyakran járok reggelente edzeni, hogy felfrissülten kezdjem a napot. Azt figyeltem meg, hogy nem csak mozgás közben, de a munkahelyemen is hatékonyabb tudok lenni.
+        </div>
+        <div class="writer">
+          Rita (22)
+        </div>
+      </div>
+
+      <div class="turner">
+        <div class="inline"><div class="turner1 lepteto"></div></div>
+        <div class="inline"> <div class="numbers">1 / 2</div></div>
+        <div class="inline"><div class="turner2 lepteto"></div></div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="inline top">
+      <div class="guarantee1-title">
+        Hivatalos Magyarországi forgalmazó
+      </div>
+      <div class="guarantee-box">
+        <div class="img2">
+
+        </div>
+        <div class="description2">
+          <div class="pinktext">Egyenesen a gyártótól!</div><br/>
+          Az Országos Élelmiszer és Táplálkozás Tudományi Intézet jóváhagyásával. Magyarországon kizárólag mi rendelkezünk bevizsgált, hitelesített termékkészlettel. Légy óvatos a nem hitelesített forrásból történő vásárlásoknál a visszaélések elkerülése érdekében!
+          2014 Minden jog fenntartva Fitness-termek.hu Magyarország kft.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

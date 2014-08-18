@@ -1,0 +1,16 @@
+<html {+htmlAttr}{/htmlAttr} {@for:html}{$key}="{$value}"{/for}>
+<head>
+  <meta charset="UTF-8">
+  <title>{+title}{pageTitle}{/title}</title>
+  {>"head/favicon"/}
+  {>"head/opengraph"/}
+  {>"head/robots"/}
+  {>"head/seo"/}
+  {>"head/viewport"/}
+  {+head}{/head}
+</head>
+<body {+bodyAttr}{/bodyAttr}>
+  {+body}{/body}
+  {>"head/social"/}
+</body>
+</html>

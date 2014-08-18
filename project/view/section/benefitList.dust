@@ -1,0 +1,50 @@
+<a href="" id="listparam" name="listparam"></a>
+<section class="list-section">
+  <div class="wrap">
+    <h1 class="section-title">Milyen helyzetekben nyújt megoldást?</h1>
+    <div class="picture1"></div>
+    <ul class="listul1">
+      <li class="list-item">
+        <div class="list-title">
+          <i class="list-icon body-icon"></i>
+          Ha fogyni szeretnél:
+        </div>
+        <p class="list-text">
+          A biztos fogyás elsődleges feltétele / alapfeltétele az <strong>anyagcsere</strong> felgyorsítása. A BioPerine formula fokozza a
+          &nbsp;<strong>metabolikus</strong> folyamatokat és optimalizálja a tápanyagok felhasználását. Aktív
+          összetevőinek kedvező hatására a
+          vérnyomás emelkedése nélkül javulnak a keringési folyamatok, felélénkül az anyagcsere és beindul a
+          (hatékony) <strong>zsírégetés</strong>.
+        </p>
+      </li>
+      <li class="list-item">
+        <div class="list-title">
+          <i class="list-icon heart-icon"></i>
+          Egészséges életmódhoz:
+        </div>
+        <p class="list-text">
+          A kezdeti, gyors eredmények fenntartásához / állandósításához elengedhetetlen néhány életmódbeli változás
+          betartása, az immunrendszer támogatása és a teljesítmény fokozása. A PinkSlimben található gyömbér,
+          rozmaring és zöld tea kivonatok immunerősítő hatással bírnak, serkentik az agyműködést,
+          javítva ezzel a szellemi és fizikai teljesítményt, valamint az állóképességet. A gyömbér kivonatnak
+          köszönhetően alkalmas az <strong>immunrendszer</strong> erősítésére, ezáltal az influenza és egyéb megbetegedések megelőzésére.
+        </p>
+      </li>
+      <li class="list-item">
+        <div class="list-title">
+          <i class="list-icon yy-icon"></i>
+          Ennél is több dologra ad megoldás:
+        </div>
+        <p class="list-text">
+          A fogyás mellett a komplex formula a következőkre is hatással van:
+        <ul>
+          <li>Máj erősítése</li>
+          <li>Memória javítása</li>
+          <li>Koncentráció fokozása</li>
+          <li>Fejfájás csillapítás</li>
+        </ul>
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>

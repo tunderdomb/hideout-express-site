@@ -1,0 +1,24 @@
+{
+  "script": "app.js",
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules",
+    ".idea"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node"
+  },
+  "watch": [
+    "app/**/*.json",
+    "app/**/*.js",
+    "nodemon.json",
+    "helpers/node/*.js"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json",
+  "nodeArgs": ["--debug"]
+}

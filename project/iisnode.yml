@@ -1,0 +1,14 @@
+node_env: production
+
+watchedFiles: view/**/*.dust;app/**/*.js;app/**/*.json;iisnode.yml;web.config
+
+loggingEnabled: true
+logDirectoryName: logs
+maxLogFileSizeInKB: 128
+maxTotalLogFileSizeInKB: 1024
+maxLogFiles: 20
+
+devErrorsEnabled: true
+debuggingEnabled: false
+#debuggerPortRange: 5058-6058
+#debuggerPathSegment: debug
