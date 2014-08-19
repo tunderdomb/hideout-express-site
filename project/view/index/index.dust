@@ -1,0 +1,7 @@
+{> "layout/page"/}
+{<head}
+  <link rel="stylesheet" href="/static/css/main.css"/>
+{/head}
+{<bodyAttr}{/bodyAttr}
+{<body}
+{/body}

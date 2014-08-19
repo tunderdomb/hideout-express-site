@@ -1,17 +1,12 @@
 module.exports = function ( app ){
   app.use(function ( err, req, res, next ){
-    app.get("log").error({err: err})
+    app.get("log").error({err: err.original})
     switch ( req.headers.accept ) {
       case "application/json":
-        res.send(err)
+        res.send(err.original)
         break
       default:
-        var status = err.status || 500
-        res.render(status, {
-          errorCode: err.status,
-          errorMessage: err.message,
-          stackTrace: err.stack
-        })
+        res.render("error/"+(err.status || 500), err)
     }
   })
 }

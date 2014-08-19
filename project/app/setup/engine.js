@@ -3,7 +3,7 @@ var adapter = require("dustin")({
   cache: !DEBUG,
   whiteSpace: false,
   helpers: "helpers/node/*.js",
-  resolve: "view/"
+  views: "view/"
 })
 module.exports = function ( app ){
   app.engine("dust", adapter.__express)

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{Node.js Dependencies for hideout-express-site}" />
-    <file url="PROJECT" libraries="{Node.js v0.10.24 Core Modules, async-DefinitelyTyped, chai-DefinitelyTyped, dustjs-linkedin-DefinitelyTyped, express-DefinitelyTyped, less-DefinitelyTyped, superagent-DefinitelyTyped}" />
+    <file url="PROJECT" libraries="{Node.js v0.10.24 Core Modules}" />
     <includedPredefinedLibrary name="Node.js Globals" />
   </component>
 </project>

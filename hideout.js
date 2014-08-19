@@ -41,7 +41,7 @@ module.exports = function( hideout ){
       "glob": "4.0.4",
       "merge-stream": "0.1.5",
       "gulp-stylist": "1.1.0",
-      "gulp-dustin": "1.0.2",
+      "gulp-dustin": "1.0.3",
       "gulp-concat": "2.3.4",
       "gulp-watch": "0.6.8",
       "gulp-imagemin": "0.6.1",

@@ -2,15 +2,15 @@
 <head>
   <meta charset="UTF-8">
   <title>{+title}{pageTitle}{/title}</title>
-  {>"head/favicon"/}
-  {>"head/opengraph"/}
-  {>"head/robots"/}
-  {>"head/seo"/}
-  {>"head/viewport"/}
+  {>"import/favicon"/}
+  {>"import/opengraph"/}
+  {>"import/robots"/}
+  {>"import/seo"/}
+  {>"import/viewport"/}
   {+head}{/head}
 </head>
 <body {+bodyAttr}{/bodyAttr}>
   {+body}{/body}
-  {>"head/social"/}
+  {>"import/social"/}
 </body>
 </html>

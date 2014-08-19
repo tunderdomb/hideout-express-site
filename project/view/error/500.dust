@@ -5,7 +5,8 @@
 </head>
 <body>
 <h1>Internal Server Error - 500</h1>
-<p>{errorMessage}</p>
-<pre>{stackTrace}</pre>
+<h2>{message}</h2>
+<p>{description}</p>
+<pre>{original}</pre>
 </body>
 </html>
