@@ -26,7 +26,7 @@ module.exports = function( hideout ){
     .dependencies({
       "formidable": "1.0.15",
       "superagent": "0.18.0",
-      "dustin": "^1.1.3",
+      "dustin": "^1.2.1",
       "serve-favicon": "2.0.1",
       "serve-index": "1.1.4",
       "bunyan": "0.23.1",

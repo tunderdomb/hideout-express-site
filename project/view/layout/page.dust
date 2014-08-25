@@ -12,5 +12,6 @@
 <body {+bodyAttr}{/bodyAttr}>
   {+body}{/body}
   {>"import/social"/}
+  {>"import/debug"/}
 </body>
 </html>

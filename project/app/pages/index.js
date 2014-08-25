@@ -1,5 +1,5 @@
 //var pageContext
-var context = require("../context")
+var context = require("../util/context")
 
 module.exports = function ( app ){
 

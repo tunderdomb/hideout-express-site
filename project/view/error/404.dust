@@ -5,8 +5,7 @@
 </head>
 <body>
 <h1>Page Not Found - 404</h1>
-<h2>{message}</h2>
-<p>{description}</p>
-<pre>{original}</pre>
+<p>{errorMessage}</p>
+<pre>{stackTrace}</pre>
 </body>
 </html>

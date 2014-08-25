@@ -1,0 +1,169 @@
+@import "../import/global";
+
+// positions
+.absolute{position: absolute}
+.fixed{position: fixed}
+
+.to-bottom{bottom: 0}
+.to-left{left: 0}
+.to-top{top: 0}
+.to-right{right: 0}
+
+.abs-bottom:extend(.absolute, .to-bottom){}
+.abs-right:extend(.absolute, .to-right){}
+.abs-top:extend(.absolute, .to-top){}
+.abs-left:extend(.absolute, .to-left){}
+.abs-cover:extend(.absolute, .to-left, .to-bottom, .to-right, .to-top){}
+
+.fix-bottom:extend(.fixed, .to-bottom){}
+.fix-right:extend(.fixed, .to-right){}
+.fix-top:extend(.fixed, .to-top){}
+.fix-left:extend(.fixed, .to-left){}
+.fix-cover:extend(.fixed, .to-left, .to-bottom, .to-right, .to-top){}
+
+// displays
+.inline{display: inline-block}
+.block{display: block}
+.table, .row{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.cell{display: table-cell}
+.none{display: none}
+
+// aligns
+.middle{vertical-align: middle}
+.top{vertical-align: top}
+.bottom{vertical-align: bottom}
+.left{text-align: left}
+.right{text-align: right}
+.center{text-align: center}
+
+// combos
+// inline blocks
+.middle-line:extend(.middle, .inline){}
+.bottom-line:extend(.bottom, .inline){}
+.top-line:extend(.top, .inline){}
+.left-line:extend(.left, .inline){}
+.right-line:extend(.right, .inline){}
+.center-line:extend(.center, .inline){}
+// cells
+.middle-cell:extend(.middle, .cell){}
+.top-cell:extend(.top, .cell){}
+.bottom-cell:extend(.bottom, .cell){}
+.left-cell:extend(.left, .cell){}
+.right-cell:extend(.right, .cell){}
+.center-cell:extend(.center, .cell){}
+
+// blocks
+.center-block:extend(.block){
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// widths
+.one-wide{width: 10%}
+.two-wide{width: 20%}
+.three-wide{width: 30%}
+.four-wide{width: 40%}
+.half-wide{width: 50%}
+.six-wide{width: 60%}
+.seven-wide{width: 70%}
+.eight-wide{width: 80%}
+.nine-wide{width: 90%}
+.third-wide{width: (100% / 3)}
+.two-third-wide{width: (100% / 3 * 2)}
+.quarter-wide{width: 25%}
+.three-quarter-wide{width: 75%}
+.wide{width: 100%}
+
+// heights
+.one-tall{height: 10%}
+.two-tall{height: 20%}
+.three-tall{height: 30%}
+.four-tall{height: 40%}
+.half-tall{height: 50%}
+.six-tall{height: 60%}
+.seven-tall{height: 70%}
+.eight-tall{height: 80%}
+.nine-tall{height: 90%}
+.third-tall{height: (100% / 3)}
+.two-third-tall{height: (100% / 3 * 2)}
+.quarter-tall{height: 25%}
+.three-quarter-tall{height: 75%}
+.tall{height: 100%}
+
+// padding
+.pad-one{padding-left: 10%}
+.pad-two-wide{padding-left: 20%}
+.pad-three-wide{padding-left: 30%}
+.pad-four-wide{padding-left: 40%}
+.pad-half-wide{padding-left: 50%}
+.pad-six-wide{padding-left: 60%}
+.pad-seven-wide{padding-left: 70%}
+.pad-eight-wide{padding-left: 80%}
+.pad-nine-wide{padding-left: 90%}
+.pad-third-wide{padding-left: (100% / 3)}
+.pad-two-third-wide{padding-left: (100% / 3 * 2)}
+.pad-quarter-wide{padding-left: 25%}
+.pad-three-quarter-wide{padding-left: 75%}
+
+// text sizes 
+.fs-12{font-size: 1.2em}
+.fs-13{font-size: 1.3em}
+.fs-14{font-size: 1.4em}
+.fs-15{font-size: 1.5em}
+.fs-16{font-size: 1.6em}
+.fs-17{font-size: 1.7em}
+.fs-18{font-size: 1.8em}
+.fs-19{font-size: 1.9em}
+.fs-20{font-size: 2em}
+.fs-22{font-size: 2.2em}
+.fs-25{font-size: 2.5em}
+.fs-27{font-size: 2.7em}
+.fs-30{font-size: 3em}
+.fs-35{font-size: 3.5em}
+.fs-4{font-size: 4em}
+.fs-45{font-size: 4.5em}
+
+// misc
+
+.fix{
+  display: block;
+  &:after{
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+.pointer{cursor: pointer}
+
+.grayscale{
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+.nofilter{filter: none}
+
+// media
+
+.mobile-block{
+  @media @mobile {
+    display: block;
+    width: 100%;
+  }
+}
+.desktop-block{
+  display: none;
+  @media @desktop {
+    display: block;
+  }
+}
+.desktop-inline{
+  display: none;
+  @media @desktop {
+    display: inline-block;
+  }
+}
